@@ -46,7 +46,7 @@ html {
     display: none;
 }
 
-#question {
+#fruitsContainer {
     width: 650px;
     height: 400px;
     margin: 50px auto 10px auto;
@@ -56,6 +56,8 @@ html {
     text-align: center;
     font-family: cursive, sens-serif;
     color: black;
+    position: relative;
+    overflow: hidden;
 }
 
 #instruction {
@@ -122,4 +124,15 @@ html {
     left: 145px;
     z-index: 2;
     display: none;
+}
+
+.life {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.fruit {
+    display: none;
+    position: absolute;
 }
