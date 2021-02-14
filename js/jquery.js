@@ -38,6 +38,20 @@ $(function () {
         }
     });
 
+    $("#fruit1").mouseover(function() {
+        score++;
+        $("#scoreValue").html(score); //update score
+
+        //stop fruit
+        clearInterval(action);
+
+        //hide fruit
+        $("#fruit1").hide("explode", 500);
+
+        //send new fruit
+        setTimeout(startAction, 800);
+    });
+
 
     // --------- FUNCTIONS ---------
 
